@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cipherguard.NewPasswordController">
+   <children>
+      <Pane prefHeight="602.0" prefWidth="335.0">
+         <children>
+            <Label layoutX="138.0" layoutY="40.0" text="New Record">
+               <font>
+                  <Font name="Nirmala UI Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="105.0" text="Name">
+               <font>
+                  <Font name="Nirmala UI" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="144.0" text="User ID">
+               <font>
+                  <Font name="Nirmala UI" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" layoutX="99.0" layoutY="101.0" prefHeight="25.0" prefWidth="201.0" promptText="App name or website name" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1 0;" />
+            <TextField fx:id="usernameField" layoutX="101.0" layoutY="139.0" prefHeight="25.0" prefWidth="201.0" promptText="Username or email id" style="-fx-background-color: transparent; -fx-border-color: #222; -fx-border-width: 0 0 1 0;" />
+            <TextField fx:id="passwordField" alignment="CENTER" layoutX="41.0" layoutY="228.0" prefHeight="28.0" prefWidth="253.0" style="-fx-background-color: transparent; -fx-border-color: #222; -fx-border-width: 1 1 2 1;" />
+            <Label layoutX="137.0" layoutY="199.0" text="Password">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="36.0" layoutY="187.0" prefHeight="0.0" prefWidth="260.0" />
+            <Label layoutX="40.0" layoutY="284.0" text="Length" />
+            <Slider fx:id="lengthSlider" layoutX="137.0" layoutY="286.0" prefHeight="14.0" prefWidth="153.0" min="0" max="30"/>
+            <TextField fx:id="passwordLengthField" layoutX="90.0" layoutY="278.0" prefHeight="26.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1 0;" text="8" />
+            <CheckBox fx:id="checkNumber" layoutX="50.0" layoutY="324.0" mnemonicParsing="false" text="Numbers" />
+            <CheckBox fx:id="checkLowerCase" selected="true" layoutX="50.0" layoutY="352.0" mnemonicParsing="false" text="Lowercase" />
+            <CheckBox fx:id="checkSymbol" layoutX="194.0" layoutY="325.0" mnemonicParsing="false" text="Symbols" />
+            <CheckBox fx:id="checkUpperCase" layoutX="194.0" layoutY="352.0" mnemonicParsing="false" text="Uppercase" />
+            <Button fx:id="regenerateBtn" onAction="#handleRegeneratePasswordBtn"  alignment="CENTER" layoutX="48.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 5px;" text="Regenerate" />
+            <Button fx:id="addBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleAddPassword" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: EC4338; -fx-text-fill: white; -fx-background-radius: 5px;" text="Add">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="prevPage" onAction="#handlePrevPageBtn" layoutX="26.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="45.0" style="-fx-background-color: black; -fx-background-radius: 50%; -fx-pref-width: 43;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

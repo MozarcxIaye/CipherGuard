@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cipherguard.SignupController">
+   <children>
+      <Pane prefHeight="608.0" prefWidth="335.0">
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="55.0" layoutX="140.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:///C:/Users/Katzo/Desktop/CIpherGuard/CIpherGuard/src/public/CipherGuardshortlogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="148.0" text="CREATE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="184.0" text="NEW ACCOUNT">
+               <font>
+                  <Font name="Nirmala UI Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="255.0" text="USERNAME" textFill="#575656">
+               <font>
+                  <Font name="Nirmala UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="30.0" layoutY="274.0" prefHeight="35.0" prefWidth="277.0" />
+            <Label layoutX="30.0" layoutY="319.0" text="EMAIL" textFill="#575656">
+               <font>
+                  <Font name="Nirmala UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="30.0" layoutY="338.0" prefHeight="35.0" prefWidth="277.0" />
+            <Label layoutX="30.0" layoutY="383.0" text="PASSWORD" textFill="#575656">
+               <font>
+                  <Font name="Nirmala UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordField" layoutX="30.0" layoutY="402.0" prefHeight="35.0" prefWidth="277.0" />
+            <Button fx:id="createAccountButton" layoutX="29.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleCreateNewAccountButton" prefHeight="35.0" prefWidth="277.0" style="-fx-background-color: EC4338; -fx-background-radius: 7px; -fx-font-weight: bold;" text="CREATE ACCOUNT" textFill="WHITE" />
+            <Label layoutX="39.0" layoutY="498.0" text="By clicking “Create Account” you agree to our" textAlignment="CENTER" textFill="#757373">
+               <font>
+                  <Font name="Nirmala UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="515.0" text="terms and privacy policy." textFill="#757373">
+               <font>
+                  <Font name="Nirmala UI Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>
